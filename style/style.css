@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: #5e8cff;
+  padding: 15px;
+}
+
+.header ul {
+  margin: 0;
+}
+
+.header ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+.header ul li a {
+  color: white;
+}
+
+.header ul li .page {
+  background: white;
+  color: black;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.span {
+  background: green;
+}
+
+.body {
+  background-image: url("./../food.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body h1 {
+  margin: 0 auto;
+  padding-top: 200px;
+  width: fit-content;
+  color: white;
+  font-size: 50px;
+}
+
+.body h5 {
+  margin: 0 auto;
+  width: fit-content;
+  color: white;
+  font-size: 20px;
+}
+
+.about {
+  height: 20vh;
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer {
+  background: #5e8cff;
+  height: 30vh;
+  text-align: center;
+}
+
+.footer h3 {
+  color: white;
+  padding: 10px;
+}
+
+.contact {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.contact .contacts {
+  padding: 15px;
+}
+
+.contacts input {
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.contacts textarea {
+  padding: 10px;
+  width: 400px;
+}
+
+.portfolio {
+  padding: 10px;
+}
+
+.inline {
+  display: inline-block;
+}
