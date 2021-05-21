@@ -3,29 +3,55 @@ body {
   padding: 0;
 }
 
-.header {
-  background: #5e8cff;
-  padding: 15px;
+.topnav {
+  overflow: hidden;
+  background-color: #5e8cff;
 }
 
-.header ul {
-  margin: 0;
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.header ul li {
-  display: inline;
-  margin-right: 40px;
-}
-
-.header ul li a {
-  color: white;
-}
-
-.header ul li .page {
-  background: white;
+.topnav a:hover {
+  background-color:#f2f2f2;
   color: black;
-  padding: 4px;
-  border-radius: 4px;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 .span {
@@ -41,29 +67,32 @@ body {
 
 .body h1 {
   margin: 0 auto;
-  padding-top: 200px;
+  padding-top: 100px;
   width: fit-content;
-  color: white;
+  color: whitesmoke;
   font-size: 50px;
+  height: 40px;
 }
 
 .body h5 {
   margin: 0 auto;
   width: fit-content;
-  color: white;
-  font-size: 20px;
+  color:rgb(241, 127, 241);
+  font-size: 25px;
+  padding-top:100px ;
+  
 }
 
 .about {
   height: 20vh;
-  width: 700px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
 .footer {
   background: #5e8cff;
-  height: 30vh;
+  height: 50vh;
   text-align: center;
 }
 
