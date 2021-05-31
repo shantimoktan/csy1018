@@ -93,7 +93,8 @@ body {
   text-align: center;
 }
 .about h2 {
-  color:aquamarine;
+  color: #26921c;
+  
 }
 
 .footer {
@@ -210,22 +211,22 @@ font-weight: bold; }
 }
 .blog-container .blog:nth-child(2){
 
-  background-image: url("../image/blog-2.jpg");
+  background-image: url("../images/blog-2.jpg");
 }
 .blog-container .blog:nth-child(3){
 
-  background-image: url("../images/blog-1.jpg");
+  background-image: url("../images/blog-3.jpg");
 }
 .blog-container .blog:nth-child(4){
 
-  background-image: url("../images/blog-1.jpg");
+  background-image: url("../images/blog-4.jpg");
 }
 .blog-container .blog:nth-child(5){
 
-  background-image: url("../images/blog-1.jpg");
+  background-image: url("../images/blog-5.jpg");
 }.blog-container .blog:nth-child(6){
 
-  background-image: url("../images/blog-1.jpg");
+  background-image: url("../images/blog-6.jpg");
 }
 .blog .blog-title {
   position: absolute;
