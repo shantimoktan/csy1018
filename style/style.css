@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Oswald', sans-serif;
+  overflow-x: hidden;
 }
 
 .topnav {
@@ -82,12 +83,10 @@ body {
   width: fit-content;
   color:aqua;
   font-size: 25px;
-  padding-top:100px ;
   
 }
 
 .about {
-  height: 20vh;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -99,9 +98,8 @@ body {
 
 .footer {
   background-color:#5e8cff;
-  height: 50vh;
   text-align: center;
-  
+  padding: 10px;
 }
 
 .footer h3 {
@@ -295,4 +293,13 @@ p {
 .blog:hover .blog-title {
   bottom: 0;
   transition: 0.3s;
+}
+
+.works fieldset{
+  width: 95%;
+  display: flex;
+}
+
+.works fieldset div{
+  margin: 0 0 0 30px;
 }
