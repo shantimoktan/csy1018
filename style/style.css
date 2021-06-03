@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
 }
 
@@ -63,7 +62,7 @@ body {
 }
 
 .body {
-  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./../food.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../images/food.jpg");
   height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -119,9 +118,13 @@ h1 {
     
 .contact {
   text-align: center;
-  width: 50%;
+  width: 100%;
+  height: 100vh;
   margin: 0 auto;
   padding: 15px;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../images/food.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contact .contacts {
@@ -134,12 +137,14 @@ h1 {
   width: 400px;
   margin-bottom: 10px;
   border-radius: 5px;
+  border: 1px solid;
 }
 
 .contacts textarea {
   padding: 10px;
   width: 400px;
   border-radius: 5px;
+  border: 1px solid;
 }
 .contacts button {background-color: #3fb6b2;
 padding: 12px 45px;
@@ -205,7 +210,10 @@ h4 {
 .blog-container {
   padding: 0 10px 20px 10px;
   text-align: center;
-  color: #26921c;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../images/food.jpg");
+  color: #3fb6b2;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .blog-container .blogs-grids {
@@ -238,7 +246,7 @@ h4 {
   }
 }
 
-.blog-container .blog {
+.blog-container .blog , .work {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -248,6 +256,10 @@ h4 {
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blog-container .blog {
+  background-image: url("../mom-kitchen.png");
 }
 .blog-container .blog:nth-child(1){
 
@@ -272,13 +284,42 @@ h4 {
 
   background-image: url("../images/blog-6.jpg");
 }
+/*portfolio work section*/
+.blog-container.work {
+  background-image: url("../images/mom-kitchen.png");
+}
+.blog-container .work:nth-child(1){
+
+  background-image: url("../images/mom-kitchen.png");
+}
+.blog-container .work:nth-child(2){
+
+  background-image: url("../images/CV.png");
+}
+.blog-container .work:nth-child(3){
+
+  background-image: url("../images/contact.png");
+}
 .blog .blog-title {
   position: absolute;
-  background-color: #0000009e;
+  background-color: #6c10da;
   width: 100%;
   color: #fff;
-  bottom: -200px;
   padding: 2px;
+  bottom:0;
+  text-align: left;
+  transition: 0.3s;
+  overflow: hidden;
+  bottom:-200px;
+}
+
+.work .blog-title {
+  position: absolute;
+  background-color: #6c10da;
+  width: 100%;
+  color: #fff;
+  padding: 2px;
+  bottom:-200px;
   text-align: left;
   transition: 0.3s;
   overflow: hidden;
@@ -295,6 +336,15 @@ p {
   transition: 0.3s;
 }
 
+.work:hover .blog-title {
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.works {
+  height: 100vh;
+}
+
 .works fieldset{
   width: 95%;
   display: flex;
@@ -302,4 +352,25 @@ p {
 
 .works fieldset div{
   margin: 0 0 0 30px;
+}
+
+.site-report{
+  padding: 20px 10px 20px 10px;
+}
+
+.site-report .heading{
+  margin: 0 0 30px 0;
+  background: #dedede45;
+  padding: 5px;
+  border-radius: 7px;
+  box-shadow: 1px 0px 10px #65565645;
+}
+
+
+.site-report h2{
+  color: #5e8cff;
+}
+.site-report h2,p{
+  margin: 0;
+  padding: 0;
 }
